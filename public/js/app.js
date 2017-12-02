@@ -1400,6 +1400,7 @@ window.Vue = __webpack_require__(38);
  */
 
 Vue.component('example-component', __webpack_require__(41));
+
 Vue.component('passport-clients', __webpack_require__(44));
 
 Vue.component('passport-authorized-clients', __webpack_require__(50));
