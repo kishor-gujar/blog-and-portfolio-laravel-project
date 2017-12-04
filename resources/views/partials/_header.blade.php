@@ -32,43 +32,7 @@
               <a href="javascript:void(0)" class="btn-circle btn-circle-primary animated zoomInDown animation-delay-7">
                 <i class="zmdi zmdi-share"></i>
               </a>
-            </div>
-
-
-            
-            @if (Auth::check())
-            <div class="share-menu">
-              <ul class="share-menu-list">
-                <li class="animated fadeInRight animation-delay-3">
-                  <a href="javascript:void(0)" class="btn-circle btn-google">
-                    <i class="zmdi zmdi-google"></i>
-                  </a>
-                </li>
-              </ul>
-              <a href="javascript:void(0)" class="btn-circle btn-circle-primary animated zoomInDown animation-delay-7">
-                <i class="zmdi zmdi-account"></i>
-              </a>
-            </div>
-            @else
-              <div class="share-menu">
-              <ul class="share-menu-list">
-                <li class="animated fadeInRight animation-delay-3">
-                  <a href="javascript:void(0)" class="btn-circle btn-google">
-                    <i class="zmdi zmdi-google"></i>
-                  </a>
-                </li>
-                <li class="animated fadeInRight animation-delay-2">
-                  <a href="javascript:void(0)" class="btn-circle btn-facebook">
-                    <i class="zmdi zmdi-facebook"></i>
-                  </a>
-                </li>
-              </ul>
-              <a href="javascript:void(0)" class="btn-circle btn-circle-primary animated zoomInDown animation-delay-7">
-                <i class="zmdi zmdi-account"></i>
-              </a>
-            </div>
-            @endif
-    
+            </div>    
             <form class="search-form animated zoomInDown animation-delay-9">
               <input id="search-box" type="text" class="search-input" placeholder="Search..." name="q" />
               <label for="search-box">
