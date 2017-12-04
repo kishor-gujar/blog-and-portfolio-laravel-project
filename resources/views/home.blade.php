@@ -3,9 +3,9 @@
 @section('content')
 
   @include('partials._configure')
-  @include('partials._authenticate')
   @include('partials._header')
   @include('partials._nav')
+
 
       <div class="ms-hero ms-hero-material">
         <span class="ms-hero-bg"></span>
@@ -765,8 +765,7 @@
           </div>
         </div>
       </div>
-
-
+      
       @include('partials._footer')
       @include('partials._copyrights')
 

@@ -4,8 +4,8 @@
             <a class="navbar-brand" href="index.html">
               <!-- <img src="assets/img/demo/logo-navbar.png" alt=""> -->
               <span class="ms-logo ms-logo-sm">M</span>
-              <span class="ms-title">Material
-                <strong>Style</strong>
+              <span class="ms-title">Programming
+                <strong>Place</strong>
               </span>
             </a>
           </div>
@@ -229,186 +229,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="page">Pages
-                  <i class="zmdi zmdi-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="dropdown-item has_children">About us &amp; Team</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-about.html">About us Option 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-about2.html">About us Option 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-about3.html">About us Option 3</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-about4.html">About us Option 4</a>
-                      </li>
-                      <li class="dropdown-divider"></li>
-                      <li>
-                        <a class="dropdown-item" href="page-team.html">Our Team Option 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-team2.html">Our Team Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Form</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="page-contact.html">Contact Option 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-contact2.html">Contact Option 2</a>
-                      </li>
-                      <li class="dropdown-divider"></li>
-                      <li>
-                        <a class="dropdown-item" href="page-login_register.html">Login &amp; Register</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-login.html">Login Full</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-login2.html">Login Integrated</a>
-                      </li>
-                      <li class="dropdown-divider"></li>
-                      <li>
-                        <a class="dropdown-item" href="page-login_register2.html">Register Option 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-register2.html">Register Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Profiles</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-profile.html">User Profile Option 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-profile2.html">User Profile Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Error</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-404.html">Error 404 Full Page</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-404_2.html">Error 404 Integrated</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-500.html">Error 500 Full Page</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-500_2.html">Error 500 Integrated</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Bussiness &amp; Products</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-testimonial.html">Testimonials</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-clients.html">Our Clients</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-product.html">Products</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-services.html">Services</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Pricing</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-pricing.html">Pricing Box</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-pricing2.html">Pricing Box 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-princing_table.html">Pricing Mega Table</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">FAQ &amp; Support</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-support.html">Support Center</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-faq.html">FAQ Option 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-faq2.html">FAQ Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Coming Soon</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-coming.html">Coming Soon Option 1</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-coming2.html">Coming Soon Option 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-coming3.html">Coming Soon Option 3</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Timeline</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item" href="page-timeline_left.html">Timeline Left</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-timeline_left2.html">Timeline Left 2</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="page-timeline.html">Timeline Center</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children dropdown-item">Email Templates</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a class="dropdown-item with-badge" href="page-email.html">Email Template 1
-                          <span class="badge badge-success text-right">1.2</span>
-                        </a>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item with-badge" href="page-email2.html">Email Template 2
-                          <span class="badge badge-success text-right">1.2</span>
-                        </a>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="page-all.html" class="dropdown-link">All Pages</a>
-                  </li>
-                </ul>
-              </li>
+      
               <li class="nav-item dropdown dropdown-megamenu-container">
                 <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="component">UI Elements
                   <i class="zmdi zmdi-chevron-down"></i>
@@ -746,6 +567,14 @@
                     <a class="dropdown-item" href="ecommerce-cart.html">E-Commerce Cart</a>
                   </li>
                 </ul>
+              </li>
+               <li class="nav-item">
+                <a href="/about" class="nav-link dropdown-toggle animated fadeIn animation-delay-9"  aria-haspopup="true" aria-expanded="false" data-name="ecommerce">About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('contact.get') }}" class="nav-link dropdown-toggle animated fadeIn animation-delay-9"  aria-haspopup="true" aria-expanded="false" data-name="ecommerce">Contact
+                </a>
               </li>
             </ul>
           </div>

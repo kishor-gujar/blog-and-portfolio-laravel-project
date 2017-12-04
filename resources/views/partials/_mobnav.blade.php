@@ -9,9 +9,9 @@
       <div class="sb-slidebar-container">
         <header class="ms-slidebar-header">
           <div class="ms-slidebar-login">
-            <a href="javascript:void(0)" class="withripple">
+            <a href="{{ route('login') }}" class="withripple">
               <i class="zmdi zmdi-account"></i> Login</a>
-            <a href="javascript:void(0)" class="withripple">
+            <a href="{{ route('register') }}" class="withripple">
               <i class="zmdi zmdi-account-add"></i> Register</a>
           </div>
           <div class="ms-slidebar-title">
@@ -23,8 +23,8 @@
             </form>
             <div class="ms-slidebar-t">
               <span class="ms-logo ms-logo-sm">M</span>
-              <h3>Material
-                <span>Style</span>
+              <h3>Programming
+                <span>Place</span>
               </h3>
             </div>
           </div>

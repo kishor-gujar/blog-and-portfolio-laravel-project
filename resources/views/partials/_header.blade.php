@@ -5,8 +5,8 @@
             <a href="index.html">
               <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
               <span class="ms-logo animated zoomInDown animation-delay-5">M</span>
-              <h1 class="animated fadeInRight animation-delay-6">Material
-                <span>Style</span>
+              <h1 class="animated fadeInRight animation-delay-6">Programming
+                <span>Place</span>
               </h1>
             </a>
           </div>
@@ -33,9 +33,42 @@
                 <i class="zmdi zmdi-share"></i>
               </a>
             </div>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8" data-toggle="modal" data-target="#ms-account-modal">
-              <i class="zmdi zmdi-account"></i>
-            </a>
+
+
+            
+            @if (Auth::check())
+            <div class="share-menu">
+              <ul class="share-menu-list">
+                <li class="animated fadeInRight animation-delay-3">
+                  <a href="javascript:void(0)" class="btn-circle btn-google">
+                    <i class="zmdi zmdi-google"></i>
+                  </a>
+                </li>
+              </ul>
+              <a href="javascript:void(0)" class="btn-circle btn-circle-primary animated zoomInDown animation-delay-7">
+                <i class="zmdi zmdi-account"></i>
+              </a>
+            </div>
+            @else
+              <div class="share-menu">
+              <ul class="share-menu-list">
+                <li class="animated fadeInRight animation-delay-3">
+                  <a href="javascript:void(0)" class="btn-circle btn-google">
+                    <i class="zmdi zmdi-google"></i>
+                  </a>
+                </li>
+                <li class="animated fadeInRight animation-delay-2">
+                  <a href="javascript:void(0)" class="btn-circle btn-facebook">
+                    <i class="zmdi zmdi-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+              <a href="javascript:void(0)" class="btn-circle btn-circle-primary animated zoomInDown animation-delay-7">
+                <i class="zmdi zmdi-account"></i>
+              </a>
+            </div>
+            @endif
+    
             <form class="search-form animated zoomInDown animation-delay-9">
               <input id="search-box" type="text" class="search-input" placeholder="Search..." name="q" />
               <label for="search-box">

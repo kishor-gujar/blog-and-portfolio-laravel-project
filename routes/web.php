@@ -12,12 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
+Route::get('/contact', 'ContactMessageController@get')->name('contact.get');
+Route::post('/contact', 'ContactMessageController@post')->name('contact.post');
+
+
+Route::get('/about', function () {
+    return view('about');
 });
+
 
 Auth::routes();
 

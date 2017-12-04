@@ -3,11 +3,11 @@
 @section('content')
 
     @include('partials._configure')
-    @include('partials._authenticate')
     @include('partials._header')
     @include('partials._nav')
-
+	
     <div class="ms-hero-page-override ms-hero-img-team ms-hero-bg-primary">
+
         <div class="container">
           <div class="text-center">
             <h1 class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Contact Us</h1>
@@ -19,33 +19,58 @@
       <div class="container">
         <div class="card card-hero animated fadeInUp animation-delay-7">
           <div class="card-block">
-            <form class="form-horizontal">
+				
+        @if (Session::has('flash_message'))				
+        <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <i class="zmdi zmdi-close"></i>
+                    </button>
+                    <strong>
+                      <i class="zmdi zmdi-check"></i> Success!</strong>{{ Session::get('flash_message') }}</div>
+        @endif
+
+            <form class="form-horizontal" method="POST" action="{{ route('contact.post') }}">
+              {{ csrf_field() }}
               <fieldset class="container">
                 <div class="form-group row is-empty">
                   <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Name</label>
                   <div class="col-lg-9">
-                    <input type="text" class="form-control" id="inputName" placeholder="Name"> </div>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
+                    @if ($errors->has('name'))
+                    	<small class="has-error">{{ $errors->first('name') }}</small>
+                    @endif
+                	</div>
                 </div>
                 <div class="form-group row is-empty">
                   <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Email</label>
                   <div class="col-lg-9">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email"> </div>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+					@if ($errors->has('email'))
+                    	<small class="has-error">{{ $errors->first('email') }}</small>
+                    @endif
+                     </div>
                 </div>
                 <div class="form-group row is-empty">
                   <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Subject</label>
                   <div class="col-lg-9">
-                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject"> </div>
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="subject"> 
+                    @if ($errors->has('subject'))
+                    	<small class="has-error">{{ $errors->first('subject') }}</small>
+                    @endif
+                	</div>
                 </div>
                 <div class="form-group row is-empty">
                   <label for="textArea" class="col-lg-2 control-label">Message</label>
                   <div class="col-lg-9">
-                    <textarea class="form-control" rows="3" id="textArea" placeholder="Yout message..."></textarea>
+                    <textarea class="form-control" rows="3" id="textArea" placeholder="Yout message..." name="message"></textarea>
+                    @if ($errors->has('message'))
+                    	<small class="has-error">{{ $errors->first('message') }}</small>
+                    @endif
                   </div>
                 </div>
                 <div class="form-group row justify-content-end">
                   <div class="col-lg-10">
                     <button type="submit" class="btn btn-raised btn-primary">Submit</button>
-                    <button type="button" class="btn btn-danger">Cancel</button>
                   </div>
                 </div>
               </fieldset>
