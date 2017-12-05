@@ -241,46 +241,6 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Blog
-                  <i class="zmdi zmdi-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="blog-sidebar.html">
-                      <i class="zmdi zmdi-view-compact"></i> Blog Sidebar 1</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-sidebar2.html">
-                      <i class="zmdi zmdi-view-compact"></i> Blog Sidebar 2</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-masonry.html">
-                      <i class="zmdi zmdi-view-dashboard"></i> Blog Masonry 1</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-masonry2.html">
-                      <i class="zmdi zmdi-view-dashboard"></i> Blog Masonry 2</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-full.html">
-                      <i class="zmdi zmdi zmdi-view-stream"></i> Blog Full Page 1</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-full2.html">
-                      <i class="zmdi zmdi zmdi-view-stream"></i> Blog Full Page 2</a>
-                  </li>
-                  <li class="dropdown-divider"></li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post.html">
-                      <i class="zmdi zmdi-file-text"></i> Blog Post 1</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="blog-post2.html">
-                      <i class="zmdi zmdi-file-text"></i> Blog Post 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="portfolio">Portfolio
                   <i class="zmdi zmdi-chevron-down"></i>
                 </a>
@@ -325,6 +285,10 @@
                       <i class="zmdi zmdi-collection-item-2"></i> Portfolio Item 2</a>
                   </li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a href="/blog" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" aria-haspopup="true" aria-expanded="false" data-name="blog">Blog
+                </a>
               </li>
                <li class="nav-item">
                 <a href="/about" class="nav-link dropdown-toggle animated fadeIn animation-delay-9"  aria-haspopup="true" aria-expanded="false" data-name="about">About Us

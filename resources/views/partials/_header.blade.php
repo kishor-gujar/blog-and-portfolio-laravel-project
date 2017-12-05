@@ -2,9 +2,9 @@
         <!--ms-header-primary-->
         <div class="container container-full">
           <div class="ms-title">
-            <a href="index.html">
-              <!-- <img src="assets/img/demo/logo-header.png" alt=""> -->
-              <span class="ms-logo animated zoomInDown animation-delay-5">M</span>
+            <a href="/">
+              {{-- <img src="assets/img/demo/logo-header.png" alt=""> --}}
+              <span class="ms-logo animated zoomInDown animation-delay-5">P</span>
               <h1 class="animated fadeInRight animation-delay-6">Programming
                 <span>Place</span>
               </h1>
