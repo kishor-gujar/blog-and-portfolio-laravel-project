@@ -21,7 +21,7 @@ Route::post('/contact', 'ContactMessageController@post')->name('contact.post');
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('blog.category/{category}/{name?}', 'BlogController@category')->name('blog.category');
+Route::get('blog.category/{category}/{slug?}', 'BlogController@category')->name('blog.category');
 
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/blog/{id}/{slug?}', 'BlogController@single')->name('blog.single');
