@@ -962,8 +962,7 @@ module.exports = Cancel;
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(10);
-module.exports = __webpack_require__(41);
+module.exports = __webpack_require__(10);
 
 
 /***/ }),
@@ -40305,7 +40304,7 @@ exports.clearImmediate = clearImmediate;
 var disposed = false
 var normalizeComponent = __webpack_require__(38)
 /* script */
-var __vue_script__ = __webpack_require__(39)
+var __vue_script__ = null
 /* template */
 var __vue_template__ = __webpack_require__(40)
 /* template functional */
@@ -40456,35 +40455,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 39 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
-});
-
-/***/ }),
+/* 39 */,
 /* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -40499,23 +40470,69 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Example Component")
-            ]),
+    return _c(
+      "div",
+      {
+        staticClass: "ms-hero-page ms-hero-img-coffee ms-hero-bg-success mb-6"
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "text-center" }, [
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5"
+              },
+              [_vm._v("Portfolio")]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _vm._v(
-                "\n                    I'm an example component!\n                "
-              )
-            ])
+            _c(
+              "p",
+              {
+                staticClass:
+                  "lead lead-lg color-white text-center center-block mt-2 mb-4 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7"
+              },
+              [
+                _vm._v("Discover our projects and the\n                "),
+                _c("span", { staticClass: "color-warning" }, [
+                  _vm._v("rigorous process")
+                ]),
+                _vm._v(
+                  " of creation. Our principles are creativity, design, experience and knowledge."
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "btn btn-raised btn-warning animated fadeInUp animation-delay-10",
+                attrs: { href: "javascript:void(0)" }
+              },
+              [
+                _c("i", { staticClass: "zmdi zmdi-accounts" }),
+                _vm._v(" Our Services")
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "btn btn-raised btn-info animated fadeInUp animation-delay-10",
+                attrs: { href: "javascript:void(0)" }
+              },
+              [
+                _c("i", { staticClass: "zmdi zmdi-email" }),
+                _vm._v(" Concact us")
+              ]
+            )
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -40526,12 +40543,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-7168fb6a", module.exports)
   }
 }
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
