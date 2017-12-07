@@ -49,5 +49,6 @@ ga('create', 'UA-90917746-2', 'auto');
 ga('send', 'pageview');
         </script>
         <script src="{{ asset('assets/js/index.js') }}"></script>
+        @yield('script');
     </body>
 </html>
