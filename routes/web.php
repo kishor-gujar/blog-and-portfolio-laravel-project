@@ -14,21 +14,26 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/contact', 'ContactMessageController@get')->name('contact.get');
 Route::post('/contact', 'ContactMessageController@post')->name('contact.post');
 
 Route::get('/about', function () {
     return view('about');
-});
-Route::get('blog.category/{category}/{slug?}', 'BlogController@category')->name('blog.category');
+})->name('about');
 
+Route::get('blog.category/{category}/{slug?}', 'BlogController@category')->name('blog.category');
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/blog/{id}/{slug?}', 'BlogController@single')->name('blog.single');
 
+Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
+Route::get('/portfolio.gallery', 'PortfolioController@gallery')->name('portfolio.gallery');
+Route::get('/portfolio.category/{category}/{slug?}', 'PortfolioController@category')->name('portfolio.category');
+Route::get('/portfolio/{id}/{slug?}', 'PortfolioController@single')->name('portfolio.single');
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::group(['prefix' => 'admin'], function () {
