@@ -12,7 +12,7 @@
             <a class="page-link" href="{{ $paginator->url($i) }}">{{ $i }}</a>
         </li>
         @endfor
-        <li class="{{ ($paginator->currentPage() == $paginator->lastPage()) ? ' disabled' : 'page-item' }}">
+        <li class="{{ ($paginator->currentPage() == $paginator->lastPage()) ? 'page-item disabled' : 'page-item' }}">
             <a class="page-link" href="{{ $paginator->url($paginator->currentPage()+1) }}" ><span aria-hidden="true">»</span></a>
         </li>
     </ul>

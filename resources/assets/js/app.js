@@ -8,8 +8,10 @@
 require('./bootstrap');
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route } from 'react-router';
 import  PortfolioHead  from './components/PortfolioHead';
+import Portfolio from './components/Portfolio';
 
+render(<Portfolio/>,document.getElementById('portfolio'));
 
 render(<PortfolioHead/>, document.getElementById('portfoliohead'));

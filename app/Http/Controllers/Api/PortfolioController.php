@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Portfolio;
+use App\Http\Resources\Portfolio as PortfolioResource;
+use App\Http\Resources\PortfolioCollection;
 use App\Http\Controllers\Controller;
 use TCG\Voyager\Models\Category;
 
@@ -11,14 +13,12 @@ class PortfolioController extends Controller
     public function index(){
     	$categorys = Category::all();
         $portfolios = Portfolio::paginate(6);
-    	return response()->json(
-            ['portfolios' => $portfolios, 
-    		'categorys' => $categorys]);
+    	return new PortfolioCollection($portfolios);
     }
 
     public function single($p){
     	$portfolio = Portfolio::find($p);
-    	return response()->json(['portfolio' => $portfolio]);
+    	return new PortfolioResource($portfolio);
     }
 
     public function category($c){

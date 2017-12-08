@@ -9,6 +9,7 @@
 
 <div id="portfoliohead">
 </div>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-3 d-none d-lg-block">
@@ -21,10 +22,8 @@
                 <a href="{{ route('portfolio.category',[$category->id, $category->slug]) }}" class="list-group-item list-group-item-action withripple">{{ $category->name }}
                     <span class="pull-right badge-pill bg-success">{{$category->portfolios->count()}}</span></a>  
                 @endforeach 
-
             </div>
         </div>
-
         <div class="col-lg-9">
             <div class="row" id="Container">
                 @foreach($portfolios as $portfolio)
@@ -41,6 +40,6 @@
 @include('partials._mobnav')
 
 @endsection
-@section('script')
+{{--  @section('script')
     <script src="{{ asset('js/app.js') }}"></script>
-@endsection
+@endsection  --}}
