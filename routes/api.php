@@ -16,7 +16,11 @@ Route::post('register','Api\Auth\RegisterController@register');
 Route::post('login','Api\Auth\LoginController@login');
 Route::post('refresh','Api\Auth\LoginController@refresh');
 
-
 Route::middleware('auth:api')->group(function () {
 	Route::post('logout', 'Api\Auth\LoginController@logout');
 });
+
+Route::get('portfolio', 'Api\PortfolioController@index');
+Route::get('portfolio.gallery', 'Api\PortfolioController@gallery');
+Route::get('portfolio.category/{category}/{slug?}', 'Api\PortfolioController@category');
+Route::get('portfolio/{id}/{slug?}', 'Api\PortfolioController@single');

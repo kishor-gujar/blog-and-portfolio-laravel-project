@@ -9,7 +9,7 @@ require('./bootstrap');
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
-import  Example  from './components/Example';
+import  PortfolioHead  from './components/PortfolioHead';
 
 
-render(<Example/>, document.getElementById('app'));
+render(<PortfolioHead/>, document.getElementById('portfoliohead'));

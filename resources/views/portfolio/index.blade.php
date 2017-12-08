@@ -7,11 +7,8 @@
 @include('partials._header')
 @include('partials._nav')
 
-<div id="app">
+<div id="portfoliohead">
 </div>
-
-
-
 <div class="container">
     <div class="row">
         <div class="col-lg-3 d-none d-lg-block">

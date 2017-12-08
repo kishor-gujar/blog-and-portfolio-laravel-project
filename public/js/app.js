@@ -11801,7 +11801,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Example__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PortfolioHead__ = __webpack_require__(252);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -11815,7 +11815,7 @@ __webpack_require__(106);
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Example__["a" /* default */], null), document.getElementById('app'));
+Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_PortfolioHead__["a" /* default */], null), document.getElementById('portfoliohead'));
 
 /***/ }),
 /* 106 */
@@ -54353,7 +54353,18 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 246 */
+/* 246 */,
+/* 247 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -54372,57 +54383,65 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Example = function (_Component) {
-    _inherits(Example, _Component);
+var PortfolioHead = function (_Component) {
+  _inherits(PortfolioHead, _Component);
 
-    function Example() {
-        _classCallCheck(this, Example);
+  function PortfolioHead() {
+    _classCallCheck(this, PortfolioHead);
 
-        return _possibleConstructorReturn(this, (Example.__proto__ || Object.getPrototypeOf(Example)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PortfolioHead.__proto__ || Object.getPrototypeOf(PortfolioHead)).apply(this, arguments));
+  }
+
+  _createClass(PortfolioHead, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'ms-hero-page ms-hero-img-coffee ms-hero-bg-success mb-6' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'container' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'text-center' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'h1',
+              { className: 'no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5' },
+              'Portfolio'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'p',
+              { className: 'lead lead-lg color-white text-center center-block mt-2 mb-4 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7' },
+              'Discover our projects and the',
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                { className: 'color-warning' },
+                'rigorous process'
+              ),
+              ' of creation. Our principles are creativity, design, experience and knowledge.'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'javascript:void(0)', className: 'btn btn-raised btn-warning animated fadeInUp animation-delay-10' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'zmdi zmdi-accounts' }),
+              ' Our Services'
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              'a',
+              { href: 'javascript:void(0)', className: 'btn btn-raised btn-info animated fadeInUp animation-delay-10' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'zmdi zmdi-email' }),
+              ' Concact us'
+            )
+          )
+        )
+      );
     }
+  }]);
 
-    _createClass(Example, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'container' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'row' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'div',
-                        { className: 'col-md-8 col-md-offset-2' },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'panel panel-default' },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'panel-heading' },
-                                'Example Component'
-                            ),
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'div',
-                                { className: 'panel-body' },
-                                'I\'m an example component!'
-                            )
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Example;
+  return PortfolioHead;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (Example);
-
-/***/ }),
-/* 247 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
+/* harmony default export */ __webpack_exports__["a"] = (PortfolioHead);
 
 /***/ })
 /******/ ]);
