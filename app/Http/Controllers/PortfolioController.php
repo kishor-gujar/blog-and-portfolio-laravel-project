@@ -10,8 +10,8 @@ class PortfolioController extends Controller
     public function index(){
     	$categorys = Category::all();
     	$portfolios = Portfolio::paginate(6);
-    	return view('portfolio.index', 
-    		['portfolios' => $portfolios, 
+    	return view('portfolio.index',
+    		['portfolios' => $portfolios,
     		'categorys' => $categorys]);
     }
 
@@ -25,7 +25,7 @@ class PortfolioController extends Controller
         $category = Category::find($c);
         $portfolios = $category->portfolios()->paginate(6);
         return view('portfolio.category',
-            ['portfolios' => $portfolios, 
+            ['portfolios' => $portfolios,
             'categorys' => $categorys]);
     }
 

@@ -34,7 +34,10 @@ Route::get('/portfolio/{id}/{slug?}', 'PortfolioController@single')->name('portf
 
 Auth::routes();
 
-
+Route::middleware('auth')->group(function () {
+  Route::get('/account', 'ProfileController@account')->name('account');
+  Route::get('/account.profile', 'ProfileController@profile');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

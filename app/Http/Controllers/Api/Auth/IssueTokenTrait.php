@@ -8,13 +8,13 @@ use Illuminate\Support\Facades\Route;
 
 trait IssueTokenTrait{
     public function issueToken(Request $request, $grantType, $scope = "*"){
-        $params = [
-			'grant_type' => $grantType,
-            'client_id' => $this->client->id,
-            'client_secret' => $this->client->secret,
-			'username' => $request->username ?: $request->email,
-			'password' => request('password'),
-			'scope' => $scope,
+      $params = [
+    			'grant_type' => $grantType,
+          'client_id' => $this->client->id,
+          'client_secret' => $this->client->secret,
+    			'username' => $request->username ?: $request->email,
+    			'password' => request('password'),
+    			'scope' => $scope,
     	];
 
     	$request->request->add($params);

@@ -10,7 +10,7 @@
             </a>
         </div>
         <div class="collapse navbar-collapse" id="ms-navbar">
-            <ul class="navbar-nav">      
+            <ul class="navbar-nav">
                 <li class="nav-item dropdown dropdown-megamenu-container">
                     <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="component">Websites
                         <i class="zmdi zmdi-chevron-down"></i>
@@ -277,9 +277,16 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
+                          <a class="dropdown-item" href="{{ route('account') }}">
+                            <i class="mr-1 zmdi zmdi-account-circle zmdi-hc-fw"></i>
+                              Account
+                          </a>
+                        </li>
+                        <li>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
+                                         <i class="fa fa-arrow-circle-right"></i>
                                 Not <strong>{{ Auth::user()->name }}</strong> Sing Out
                             </a>
 
@@ -303,7 +310,7 @@
                         </li>
 
                     </ul>
-                
+
                 @endif
                </li>
             </ul>
