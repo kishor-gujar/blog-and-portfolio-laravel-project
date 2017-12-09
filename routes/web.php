@@ -36,7 +36,8 @@ Auth::routes();
 
 Route::middleware('auth')->group(function () {
   Route::get('/account', 'ProfileController@account')->name('account');
-  Route::get('/account.profile', 'ProfileController@profile');
+  Route::get('/account.edit', 'ProfileController@edit')->name('account.edit');
+  Route::post('/account.edit', 'ProfileController@post')->name('account.post');
 });
 
 Route::group(['prefix' => 'admin'], function () {

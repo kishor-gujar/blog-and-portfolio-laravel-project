@@ -20,7 +20,7 @@
     <div class="card card-hero animated fadeInUp animation-delay-7">
         <div class="card-block">
 
-            @if (Session::has('flash_message'))				
+            @if (Session::has('flash_message'))
             <div class="alert alert-success alert-dismissible" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <i class="zmdi zmdi-close"></i>
@@ -37,7 +37,7 @@
                         <div class="col-lg-9">
                             <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
                             @if ($errors->has('name'))
-                            <small class="has-error">{{ $errors->first('name') }}</small>
+                            <small class="has-error color-danger">{{ $errors->first('name') }}</small>
                             @endif
                         </div>
                     </div>
@@ -46,16 +46,16 @@
                         <div class="col-lg-9">
                             <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
                             @if ($errors->has('email'))
-                            <small class="has-error">{{ $errors->first('email') }}</small>
+                            <small class="has-error color-danger">{{ $errors->first('email') }}</small>
                             @endif
                         </div>
                     </div>
                     <div class="form-group row is-empty">
                         <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Subject</label>
                         <div class="col-lg-9">
-                            <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="subject"> 
+                            <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="subject">
                             @if ($errors->has('subject'))
-                            <small class="has-error">{{ $errors->first('subject') }}</small>
+                            <small class="has-error color-danger">{{ $errors->first('subject') }}</small>
                             @endif
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                         <div class="col-lg-9">
                             <textarea class="form-control" rows="3" id="textArea" placeholder="Yout message..." name="message"></textarea>
                             @if ($errors->has('message'))
-                            <small class="has-error">{{ $errors->first('message') }}</small>
+                            <small class="has-error color-danger">{{ $errors->first('message') }}</small>
                             @endif
                         </div>
                     </div>

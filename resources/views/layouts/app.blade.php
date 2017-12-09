@@ -23,15 +23,15 @@
             <script src="assets/js/html5shiv.min.js"></script>
             <script src="assets/js/respond.min.js"></script>
         <![endif]-->
-         
+
     </head>
     <body>
 
-        @yield('content');
-        @yield('script');
-        
+        @yield('content')
+        @yield('script')
+
         <script src="{{asset('assets/js/plugins.min.js')}}"></script>
-       
+
         <script src="{{asset('assets/js/app.min.js')}}"></script>
         <script src="{{asset('assets/js/configurator.min.js')}}"></script>
         <script>
@@ -52,6 +52,6 @@ ga('create', 'UA-90917746-2', 'auto');
 ga('send', 'pageview');
         </script>
         <script src="{{ asset('assets/js/index.js') }}"></script>
-        
+
     </body>
 </html>
