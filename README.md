@@ -1,2 +1,5 @@
-# programmingplaceBlogAndPortfolio
-Latravel blog and portfolio website
+# blog-and-portfolio-laravel-project
+
+# Simple blog and protfolio project with laravel 5
+
+# Latravel blog and portfolio website
